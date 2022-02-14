@@ -1,0 +1,38 @@
+ Frame f1 = new Frame("Practical-13");
+        f1.setSize(600, 400);
+
+        Label nameLabel = new Label("Enter Your Name : ");
+        nameLabel.setBounds(50, 50, 100, 30);
+        TextField nameTF = new TextField();
+        nameTF.setBounds(200, 50, 200, 30);
+
+        Label rgNo = new Label("Enter Your Reg No : ");
+        rgNo.setBounds(50, 100, 100, 30);
+        TextField rgTF = new TextField();
+        rgTF.setBounds(200, 100, 200, 30);
+
+        Button btn = new Button("Submit"); 
+        btn.setBounds(270, 200, 60, 30); 
+
+        btn.addActionListener( new ActionListener() {
+            @Override
+            public void actionPerformed( ActionEvent aActionEvent ) {
+              //if check to match the code from the question, but not really needed
+              if ( aActionEvent.getSource() == btn ){
+                System.out.println("TestButton pressed");
+              }
+            }
+          } );
+
+        Label info = new Label();
+        info.setBounds(200, 300, 200, 30);
+
+        f1.add(btn);
+        f1.add(rgNo);
+        f1.add(rgTF);
+        f1.add(nameLabel);
+        f1.add(nameTF);
+        f1.setResizable(false);
+        f1.setLayout(null);
+        f1.setVisible(true);
+    }
