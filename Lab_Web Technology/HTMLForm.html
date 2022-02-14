@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        * {
+            background-color: whitesmoke;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #male, #female {
+            width: auto;
+            height: auto;
+        }
+        #submit {
+            width: 100px;
+            margin-left: 40%;
+        }
+        input,textarea, select{
+            width: 300px;
+            height: auto;
+            background: rgb(255, 255, 255);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div style="padding: 10px; width: 50%; margin-left: auto; margin-right: auto; line-height: 2; font-size: 1.2rem;">
+        <form>
+            <h1 style="font-family:'Times New Roman', Times, serif;text-align: center; color: rgb(28, 69, 255);">
+                Registration Form</h1>
+            <label for="name">Full Name : </label><input type="text" name="name" id="name">
+            <br>
+            <label for="address">Address : <br></label><textarea style="height:auto; width: 40%;"></textarea><br>
+            <label for="gender">Gender : </label>
+            <label for="male"><i>Male</i></label><input type="radio" name="gender" id="male">
+            <label for="female"><i>Female</i></label><input type="radio" name="gender" id="female">
+            <br>
+            <label for="college">Select College : </label><select name="college" id="college">
+                <option>---Select Your College---</option>
+                <option>Yeshwantrao Chavan College of Engineering, Nagpur</option>
+                <option>G.H. Raisoni College of Engineering, Nagpur</option>
+                <option>Shri Ramdeobaba College of Engineering and Management, Nagpur</option>
+                <option>Government college of Engineering, Nagpur</option>
+                <option>Priyadarshani College of Engineering, Nagpur</option>
+                <option>K.D.K. College of Engineering, Nagpur</option>
+            </select><br>
+            <label for="email">Email : </label><input type="email" name="email" id="email"><br>
+            <label for="mobNumber">Mobile Number : </label><input type="number" name="tel" id="mobNumber"><br>
+            <label for="DoB">Date of Birth : </label><input type="date" name="dob" id="dob"><br>
+            <label for="certi">Upload certificate of Participation in CompuFest: </label><input type="file" name="file"id="certi"><br>
+            <hr style="height: 2px;background-color: black;">
+            <input type="submit" name="Submit" id="submit">
+        </form>
+    </div>
+</body>
+
+</html>
